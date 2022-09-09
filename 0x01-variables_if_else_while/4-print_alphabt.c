@@ -20,3 +20,12 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
+void trim(char *s)
+{
+	int i = strlen(s) -1;
+	while (i > 0)
+		if (s[i] == ' ' || s[i] == '\n' ||
+		    s[i] == '\t') i--;
+	else break;
+}
+s[i + 1] = '\0';
