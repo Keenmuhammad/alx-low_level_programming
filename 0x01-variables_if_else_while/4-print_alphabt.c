@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <string.h>
 
 /**
  * main - prints the alphabet in lowercase,
@@ -8,16 +7,13 @@
  */
 int main(void)
 {
-	char ch = 'a';
-	
-	while (ch <= 'z')
+	char ch;
+	for (ch = 'a' ; ch <= 'z' ; ch++)
 	{
 		if (ch != 'e' && ch != 'q')
 		{
 			putchar(ch);
 		}
-		ch++;
-	}
-	putchar('\n');
-	return (0);
+		putchar('\n');
+		return (0);
 }
