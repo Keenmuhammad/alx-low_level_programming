@@ -1,6 +1,6 @@
 /*
  * File: 6-abs.c
- * Auth: Ebenezer Sam-Oladapo
+ * Auth: Keenmuhamad
  */
 
 #include "main.h"
