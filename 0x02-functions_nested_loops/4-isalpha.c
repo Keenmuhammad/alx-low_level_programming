@@ -5,10 +5,11 @@
 
 #include "main.h"
 /**
- * Write a function that checks for alphabetic character.
- *Prototype: int _isalpha(int c);
- *Returns 1 if c is a letter, lowercase or uppercase
- *Returns 0 otherwise
+ * _isalpha - this program checks wether a character
+ *            is from the English alphabet.
+ * @c: input parameter
+ * Return: 1 for English Character
+ *         0 if the character is not English
  */
 int _isalpha(int c)
 {
