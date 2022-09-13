@@ -1,11 +1,21 @@
-#include <stdio.h>
-#include <main.h>
-
-int main()
+/*
+ * File: 0-putchar.c
+ * Auth: Ebenezer Sam-Oladapo
+ */
+#include "main.h"
+/**
+ * main - This code prints _putchar
+ * Return: 0 on success
+ */
+int main(void)
 {
-	printf ("_Putchar");
-	printf ("\n");
+	char c[] = "_putchar";
+	int i;
 
-	return 0;
-
+	for (i = 0; i < 8; i++)
+	{
+		_putchar(c[i]);
+	}
+	_putchar('\n');
+	return (0);
 }
