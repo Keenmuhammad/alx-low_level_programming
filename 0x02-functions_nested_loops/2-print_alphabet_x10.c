@@ -1,6 +1,6 @@
 /*
  * File:2-print_alphabet_x10.c
- * Auth: Ebenezer Sam-Oladapo
+ * Auth: Keenmuhammd
  */
 #include "main.h"
 /**
