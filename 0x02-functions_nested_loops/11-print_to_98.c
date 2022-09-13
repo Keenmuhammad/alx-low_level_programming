@@ -1,6 +1,6 @@
 /*
  * File: 11-print_to_98.c
- * Auth: Ebenezer Sam-Oladapo
+ * Auth: Keenmuhammad
  */
 
 #include "main.h"
