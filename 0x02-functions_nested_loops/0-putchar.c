@@ -1,6 +1,6 @@
 /*
  * File: 0-putchar.c
- * Auth: Ebenezer Sam-Oladapo
+ * Auth: Keenmuhammd
  */
 #include "main.h"
 /**
