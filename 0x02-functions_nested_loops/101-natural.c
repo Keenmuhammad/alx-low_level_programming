@@ -3,6 +3,7 @@
  * Auth: Keenmuhammad
  */
 #include "main.h"
+#include <stdio.h>
 /**
  *main - check for multiples of 3 and 5
  *Return: 0 always
@@ -30,5 +31,5 @@ int main(void)
     printf("%d\n", sum);
 
     retun (0);
-    
+
 }
