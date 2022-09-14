@@ -1,11 +1,11 @@
-/**
+/*
  * File: 7-print_last_digit.c
  * Auth: Keenmuhammad
  */
 #include "main.h"
 #include <stdio.h>
 /**
- *main - print first 50 fibinacci
+ *main - print the first 50 fibinacci
  *Return: 0 always
  */
 int main(void)
