@@ -3,7 +3,6 @@
  * Auth: Keenmuhammad
  */
 #include "main.h"
-#include <studio.h>
 
 /**
  * print_times_table - Prints the times table of the input,
@@ -11,7 +10,7 @@
  *  The value of the times table to be printed.
  */
 
-void print_times_table(intn)
+int main(void)
 {
     int num, mult, prod;
     if (n >= 0 && n <= 15)
