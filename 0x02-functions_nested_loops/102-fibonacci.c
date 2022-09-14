@@ -1,4 +1,4 @@
-*
+/**
  * File: 7-print_last_digit.c
  * Auth: Keenmuhammad
  */
@@ -14,7 +14,7 @@ long int i, x = 1, y = 2, sum = 0;
 for (i = 0; i < 49; i++)
 {
 printf("%ld, ", x);
-sum x + y;
+sum = x + y;
 x = y;
 y = sum;
 if (i == 48)
