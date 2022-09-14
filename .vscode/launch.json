@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/hp/Documents/GitHub/alx-low_level_programming/0x02-functions_nested_loops",
-      "program": "c:/Users/hp/Documents/GitHub/alx-low_level_programming/0x02-functions_nested_loops/build/Debug/outDebug",
+      "cwd": "c:/Users/hp/Documents/GitHub/alx-low_level_programming/0x03-debugging",
+      "program": "c:/Users/hp/Documents/GitHub/alx-low_level_programming/0x03-debugging/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
