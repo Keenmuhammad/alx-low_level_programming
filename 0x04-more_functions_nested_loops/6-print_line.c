@@ -1,14 +1,17 @@
-#include "holberton.h"
+#include "main.h"
 /**
- * print_line - draws a straight line (n) characters long.
- * @n: the number of underscores to print.
- */
+ * print_line - print a straight line
+ *
+ * @n: is the number of times the _ character
+ *     should be printed
+*/
 void print_line(int n)
 {
 	int i;
 
-	if (n > 0)
-		for (i = 0; i < n; i++)
-			_putchar('_');
+	for (i = 0; i < n; i++)
+	{
+		_putchar('_');
+	}
 	_putchar('\n');
 }
