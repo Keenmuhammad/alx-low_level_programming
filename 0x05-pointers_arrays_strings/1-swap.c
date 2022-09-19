@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- * swap_int - a function that swaps the value of two integers
+ * swap - a function that swaps the value of two integers
  * @i: integer pointer
  * @j: integer ponter
  * Return: Nothing
  */
-void swap_int(int *i, int *j)
+void swap(int *i, int *j)
 {
 	int aux;
 
