@@ -5,7 +5,7 @@
  * @j: integer ponter
  * Return: Nothing
  */
-void swap(int *i, int *j)
+void swap_int(int *i, int *j)
 {
 	int aux;
 
