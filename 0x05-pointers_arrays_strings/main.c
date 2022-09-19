@@ -1,4 +1,4 @@
-nclude "main.h"
+#include "main.h"
 /**
  * main - calls other functions
  * Return: Always 0
@@ -6,13 +6,13 @@ nclude "main.h"
 int main(void)
 {
 	reset_to_98();
-	1-swap();
-	2-strlen();
-	3-puts();
-	4-print_rev();
-	5-rev_string.c();
-	6-puts2.c();
-	7-puts();
-	8-print_array();
-	9-strcpy();
+	swap_int();
+	strlen();
+	puts();
+	print_rev();
+	rev_string.c();
+	puts2.c();
+	puts();
+	print_array();
+	strcpy();
 }
