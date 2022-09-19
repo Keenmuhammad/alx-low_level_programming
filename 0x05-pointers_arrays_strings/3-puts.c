@@ -5,14 +5,13 @@
  * @str: an input strig
  * Return: Nothing
  */
-void _puts(char *str)
+int main(void)
 {
-	int i = 0;
+	char *str;
+	
+	str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
+	
+	_puts(str);
 
-	while (str[i] != '\0')
-	{
-		_putchar(str[i]);
-		i++
-	}
-	_putchar ('\n');
+	 return (0);
 }
