@@ -1,16 +1,12 @@
 #include3 "main.h"
 #include <stdio.h>
-
 /**
- * set_string - sets the value of a pointer to a char
- * @s: string to change
- * @to: string that should be copied
- * @Dylan: name
- * @Allen: name
- * Return: void
+ * set_string - sets value of a pointer to a char
+ * @s: double pointer to a string
+ * @to: pointer to the string to set s to
+ * Return: Description of the returned value
  */
-
-void set_string(char **Bob Dylan, char *Robert Allen)
+void set_string(char **s, char *to)
 {
-	*Bob Dylan = Robert Allen;
+	*s = to;
 }
