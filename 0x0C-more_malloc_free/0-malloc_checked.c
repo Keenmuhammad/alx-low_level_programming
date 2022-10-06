@@ -7,7 +7,7 @@
  * Return: Apointer to allocated memory or NULL if it fails
  */
 void *malloc_checked(unsigned int b)
-{{
+{
 	int *muhammad;
 
 	muhammad = malloc(b);
