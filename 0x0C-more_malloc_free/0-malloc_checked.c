@@ -7,12 +7,13 @@
  * Return: Apointer to allocated memory or NULL if it fails
  */
 void *malloc_checked(unsigned int b)
-{
-	void *n;
+{{
+	int *muhammad;
 
-	n = malloc(b);
+	muhammad = malloc(b);
 
-	if (n == NULL)
+	if (muhammad == NULL)
 		exit(98);
-	return (n);
+
+	return (muhammad);
 }
