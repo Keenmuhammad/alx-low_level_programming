@@ -8,40 +8,60 @@
  * @owner: Owner
  * Return: Returns a pointer to newly created dog structure
  */
+char *_strdup(char *str)
+{
+	int l, i;
+	char *s;
+
+	if (str == NULL)
+		return (0);
+
+	l = 0;
+	while (*(str + l))
+		l++;
+
+	s = malloc(sizeof(char) * l + 1);
+
+	if (s == 0)
+		return (0);
+
+	for (i = 0; i <= l; i++)
+	{
+		*(s + i) = *(str + i);
+	}
+	return (s);
+}
+/**
+ * new_dog - creates a new dog
+ * @name: name of dog
+ * @age: age of dog
+ * @owner: owner of dog
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *new_dog;
-	char *cpyname, *cpyowner;
-	int len_name = 0, len_owner = 0, i;
 
-	if (name == NULL || owner == NULL)
-		return (NULL);
+	new_dog = malloc(sizeof(struct dog));
 
-	while (name[len_name])
-		len_name++;
-	while (owner[len_owner])
-		len_owner++;
+	if (new_dog == 0 || name == 0 || owner == 0)
+		return (0);
 
-	new_dog = malloc(sizeof(dog_t));
-	if (new_dog == NULL)
-		return (NULL);
-
-	cpyname = malloc(len_name + 1);
-	if (cpyname == NULL)
-		return (NULL);
-	for (i = 0; name[i]; i++)
-		cpyname[i] = name[i];
-	cpyname[i] = '\0';
-
-	cpyowner = malloc(len_owner + 1);
-	if (cpyowner == NULL)
-		return (NULL);
-	for (i = 0; owner[i]; i++)
-		cpyowner[i] = owner[i];
-	cpyowner[i] = '\0';
-
-	new_dog->name = cpyname;
+	new_dog->name = _strdup(name);
+	if (new_dog->name == 0)
+	{
+		free(new_dog);
+		return (0);
+	}
 	new_dog->age = age;
-	new_dog->owner = cpyowner;
+	new_dog->owner = _strdup(owner);
+	if (new_dog->owner == 0)
+	{
+		free(new_dog);
+		free(new_dog->name);
+		return (0);
+	}
 	return (new_dog);
 }
