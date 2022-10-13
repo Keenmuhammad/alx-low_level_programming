@@ -7,6 +7,7 @@
  * @n: number of parameters
  * @...: Other parameters
  * Return: The of all parameters
+ * (Muhammad = sum, Ibrahim = i)
  */
 int sum_them_all(const unsigned int n, ...)
 {
