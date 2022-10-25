@@ -6,33 +6,35 @@
   * @index: location to insert node
   * @n: value of the inserted node
   * Return: pointer to head of list
+  * Muhammad: Current
+  * Ibrahim: New
   */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int index, int n)
 {
-	listint_t *current, *new;
+	listint_t *Muhammad, *Ibrahim;
 
-	current = *head;
-	new = malloc(sizeof(listint_t));
-	if (new == NULL)
+	Muhammad = *head;
+	Ibrahim = malloc(sizeof(listint_t));
+	if (Ibrahim == NULL)
 		return (NULL);
-	new->n = n;
+	Ibrahim->n = n;
 	if (index == 0)
 	{
-		new->next = current;
-		*head = new;
+		Ibrahim->next = Muhammad;
+		*head = Ibrahim;
 		return (*head);
 	}
 	while (index > 1)
 	{
-		current = current->next;
+		Muhammad = Muhammad->next;
 		index--;
-		if (!current)
+		if (!Muhammad)
 		{
-			free(new);
+			free(Ibrahim);
 			return (NULL);
 		}
 	}
-	new->next = current->next;
-	current->next = new;
-	return (new);
+	Ibrahim->next = Muhammad->next;
+	Muhammad->next = Ibrahim;
+	return (Ibrahim);
 }
