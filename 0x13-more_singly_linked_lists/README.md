@@ -66,9 +66,12 @@ Please use this data structure for this project:
  * 
  */
 typedef struct listint_s
+
 {
     int n;
+    
     struct listint_s *next;
+    
 } listint_t;
 
 ## Tasks 0. Print list
