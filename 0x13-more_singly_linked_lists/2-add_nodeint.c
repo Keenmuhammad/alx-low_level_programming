@@ -6,17 +6,16 @@
  * @head: A pointer to list_t structure
  * @n: An integer data to put into the new node
  * Return: the address of the new element, or NULL on failure
- * Muhammad = New node
  */
 listint_t *add_nodeint(listint_t **head, const int n)
 {
-	listint_t *Muhammad;
+	listint_t *new_node;
 
-	Muhammad = *head;
+	new_node = *head;
 	*head = malloc(sizeof(listint_t));
 	if (!*head)
 		return (NULL);
 	(*head)->n = n;
-	(*head)->next = Muhammad;
+	(*head)->next = new_node;
 	return (*head);
 }
