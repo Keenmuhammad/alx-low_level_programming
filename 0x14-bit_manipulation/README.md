@@ -234,10 +234,6 @@ You are not allowed to use the % or / operators
 
 
 
-julien@ubuntu:~/0x14. Binary$ cat 5-main.c
-
-
-
 ## Task 6. Endianness
 
 
@@ -254,7 +250,7 @@ Returns: 0 if big endian, 1 if little endian
 
   
 
-7. Crackme3
+## Task 7. Crackme3
 
 
 
