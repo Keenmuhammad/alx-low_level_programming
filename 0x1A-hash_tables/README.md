@@ -561,4 +561,4 @@ julien@ubuntu:~/0x1A. Hash tables$
 ---
 
 ## Author
-* **Robinson Montes** - [mecomonteshbtn](https://github.com/Keenmuhammad)
+* **Muhammad Ibrahim Bello** - [Keenmuhammad](https://github.com/Keenmuhammad)
